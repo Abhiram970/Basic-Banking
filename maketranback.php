@@ -15,7 +15,13 @@
         $int2 = (int)$rows["Amount"];
     }
     if ($int1 - $input3 < 0){
-        echo '<script type="text/JavaScript"> alert("Transaction Unsuccessful , try again :( "); </script>';
+        echo '<h1> Transaction Unsuccessful , try again :( </h1>';
+    }
+    if ($input3 == 0){
+        echo '<h1> Amount to be transferred cannot be zero :( </h1>';
+    }
+    if ($input3 < 0){
+        echo '<h1> Amount to be transferred cannot be Negative :( </h1>';
     }
     else
     {
@@ -25,5 +31,10 @@
         $result1 = mysqli_query($conn, $query1);
         $query2 = "UPDATE customers SET Amount = '$fii' WHERE Name='$input2'";
         $result2 = mysqli_query($conn, $query2);
+        echo '<h1> Transaction Successful :) </h1>';
+        $stmt = $conn->prepare("INSERT INTO transactions VALUES (?, ?, ? , ?)");
+        $stmt->bind_param("ssis", $input,$input2,$input3,$input4);
+        $stmt->execute();
+        
     }
 ?>
