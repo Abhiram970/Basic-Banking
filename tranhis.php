@@ -71,6 +71,7 @@ table {
         <th>To</th>
         <th>Amount</th>
         <th>Time</th>
+        <th>Status</th>
     </tr>
     <?php 
     include 'connect.php';
@@ -88,6 +89,7 @@ table {
                     <td>".$rows['To']."</td>
                     <td>".$rows['Amount']."</td>
                     <td>".$rows['Time']."</td>
+                    <td>".$rows['Status']."</td>
                   </tr>";
           $i++;
         }

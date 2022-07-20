@@ -42,10 +42,10 @@ table {
                   <a class="nav-link hover-underline-animation" style="color: black;" href="cus.php"> View Customers </a>
                 </li>
                 <li class="nav-item f4">
-                  <a class="nav-link hover-underline-animation" style="color: black;" href="index.html">Transaction History</a>
+                  <a class="nav-link hover-underline-animation" style="color: black;" href="tranhis.php">Transaction History</a>
                 </li>
                 <li class="nav-item f4">
-                  <a class="nav-link hover-underline-animation" style="color: black;" href="index.html#Aboutus">Make Transaction</a>
+                  <a class="nav-link hover-underline-animation" style="color: black;" href="maketran.html">Make Transaction</a>
                 </li>
                 <li class="nav-item f4">
                   <a class="nav-link hover-underline-animation" style="color:black;" href="contactus.html">Contact Us</a>
